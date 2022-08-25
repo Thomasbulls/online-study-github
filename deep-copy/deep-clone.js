@@ -18,6 +18,10 @@ const deepClone = (input) => {
 
 }
 
+//export function for unit test
+module.exports = deepClone;
+
+//simple test for objects
 let obj1 = {
     name: "Thomas",
     schools: {
@@ -31,3 +35,11 @@ obj2.schools.edmonton = 'UA'
 console.log(obj1);
 console.log(obj2);
 console.log(obj1 === obj2);
+
+//test for array
+const arr = [1,2,3];
+let deepArr = deepClone(arr);
+deepArr[0] = 2;
+console.log(arr);
+console.log(deepArr);
+console.log(deepArr === arr);
