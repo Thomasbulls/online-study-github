@@ -4,8 +4,8 @@
  * @returns A new copy
  */
 
-const deepClone = (input) => {
-  if ( input == null || typeof input !== "object" ) {
+  const deepClone = (input) => {
+  if ( input == null || typeof input !== "object") {
       return input;    //primitive
   }
 
@@ -18,8 +18,7 @@ const deepClone = (input) => {
 
 }
 
-//export function for unit test
-module.exports = deepClone;
+module.exports = deepClone
 
 //simple test for objects
 let obj1 = {
@@ -43,3 +42,4 @@ deepArr[0] = 2;
 console.log(arr);
 console.log(deepArr);
 console.log(deepArr === arr);
+

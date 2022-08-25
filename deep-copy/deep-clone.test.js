@@ -1,4 +1,5 @@
-const deepClone = require('./deep-clone')
+const deepClone = require('./deep-clone.js')
+
 describe('deep clone unit test', () => {
     test('compare if two arrays have same reference address', () => {
         const arr = [1,2,3]
@@ -7,6 +8,7 @@ describe('deep clone unit test', () => {
     })
     test('change enumerable property of the copy object ', () => {
         const obj = {
+            date: new Date(),
             name:'Thomas',
             number: {
                 one: 1,
