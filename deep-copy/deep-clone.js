@@ -4,7 +4,7 @@
  * @returns A new copy
  */
 
-  const deepClone = (input) => {
+   const deepClone = (input) => {
       //make sure the input is an object or array
   if ( input == null || typeof input !== "object") {
       return input;    //primitive
@@ -21,11 +21,8 @@
   }, initialOutput);
 }
 
-module.exports = deepClone
-
-
-
-
+//export
+module.exports = deepClone;
 
 //simple test for objects
 let obj1 = {
